@@ -15,9 +15,7 @@ export default function DonateSection() {
 			<h2 className='text-3xl font-[--font-heading] mb-[--spacing-18] text-[--color-foreground]'>
 				Support Our Kids
 			</h2>
-			<form>
-				<div id='razorpay-button-container'></div>
-			</form>
+			<form>{/* <div id='razorpay-button-container'></div> */}</form>
 		</section>
 	);
 }

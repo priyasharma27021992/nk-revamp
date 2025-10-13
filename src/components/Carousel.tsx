@@ -29,7 +29,7 @@ export default function Carousel({ images }: CarouselProps) {
 							alt={`Carousel image ${index + 1}`}
 							fill
 							priority={index === 0}
-							className='object-cover rounded-xl shadow-lg'
+							className='object-cover shadow-lg'
 						/>
 					</div>
 				</SwiperSlide>

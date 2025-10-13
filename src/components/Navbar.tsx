@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const navLinks = [
 	{ name: 'Home', href: '/' },
@@ -15,15 +18,44 @@ const navLinks = [
 
 export function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isTransparent, setIsTransparent] = useState(false);
+	const pathname = usePathname();
+	const lastScrollY = useRef(0);
+
+	useEffect(() => {
+		const updateScroll = () => {
+			const currentScroll = window.scrollY;
+			if (currentScroll > lastScrollY.current && currentScroll > 80) {
+				setIsTransparent(true);
+			} else {
+				setIsTransparent(false);
+			}
+			lastScrollY.current = currentScroll;
+		};
+		window.addEventListener('scroll', updateScroll);
+		return () => {
+			window.removeEventListener('scroll', updateScroll);
+		};
+	}, []);
 
 	return (
-		<header className='fixed top-0 left-0 w-full z-50 bg-background/70 backdrop-blur-lg border-b border-border'>
-			<nav className='max-w-7xl mx-auto flex items-center justify-between px-6 py-4'>
+		<header
+			className={cn(
+				'fixed top-0 left-0 w-full z-50 bg-background border-b border-border h-20',
+				isTransparent && 'bg-background/20 backdrop-blur-xs'
+			)}>
+			<nav className='max-w-7xl mx-auto flex items-center justify-between px-6 py-4 h-full'>
 				{/* LOGO */}
 				<Link
 					href='/'
 					className='text-2xl font-bold text-primary tracking-tight'>
-					Nanhe Khwab
+					<Image
+						src='/images/logo.png'
+						height={150}
+						width={150}
+						priority
+						alt='Nanhe Khwab'
+					/>
 				</Link>
 
 				{/* Desktop Menu */}
@@ -32,7 +64,12 @@ export function Navbar() {
 						<li key={link.name}>
 							<Link
 								href={link.href}
-								className='hover:text-primary transition-colors'>
+								className={cn(
+									'hover:text-primary drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)] transition-colors font-bold px-2 py-1 rounded-sm text-sm lg:text-xl',
+									pathname === link.href && 'active',
+									'[&.active]:bg-[var(--color-brand-orange)]',
+									isTransparent && 'text-white'
+								)}>
 								{link.name}
 							</Link>
 						</li>

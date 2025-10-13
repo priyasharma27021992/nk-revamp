@@ -1,7 +1,7 @@
 import Carousel from '@/components/Carousel';
 import DonateSection from '@/components/DonateSection';
-import Hero from '@/components/Hero';
 import Mission from '@/components/Mission';
+import Stats from '@/components/Stats';
 
 const images = [
 	'/images/carousel/1.jpg',
@@ -15,14 +15,13 @@ const images = [
 export default function Home() {
 	return (
 		<div>
-			<main className='bg-[--color-background] text-[--color-foreground]'>
+			<main className='bg-[--color-background] text-[--color-foreground] flex flex-col gap-12 pt-20 text-center'>
 				{/* Carousel section */}
 				<section>
 					<Carousel images={images} />
 				</section>
 
-				{/* Hero Section */}
-				<Hero />
+				<Stats />
 
 				<Mission />
 
