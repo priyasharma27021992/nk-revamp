@@ -1,5 +1,6 @@
 import Carousel from '@/components/Carousel';
 import DonateSection from '@/components/DonateSection';
+import FocalAreas from '@/components/FocalAreas';
 import Mission from '@/components/Mission';
 import Stats from '@/components/Stats';
 
@@ -24,6 +25,8 @@ export default function Home() {
 				<Stats />
 
 				<Mission />
+
+				<FocalAreas />
 
 				<DonateSection />
 			</main>
