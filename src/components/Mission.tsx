@@ -5,7 +5,7 @@ export default function Mission() {
 		<section
 			className={cn(
 				'w-full',
-				'bg-[url(/images/guiding.jpg)] bg-no-repeat bg-right'
+				'bg-[url(/images/guiding.jpg)] bg-no-repeat bg-right bg-white/80 bg-blend-screen'
 			)}>
 			{/* Mission */}
 			<div className='max-w-4xl mx-auto'>
