@@ -5,7 +5,15 @@ import { Button } from './button';
 import { Image } from './Image';
 import { cn } from '@/lib/utils';
 
-export const FlipCard = ({ data }) => {
+interface CardDataProps {
+	data: {
+		name: string;
+		description: string;
+		src: string;
+	};
+}
+
+export const FlipCard = ({ data }: CardDataProps) => {
 	const [flip, setFlip] = useState(false);
 	const toggleFlip = () => {
 		setFlip((prev) => !prev);

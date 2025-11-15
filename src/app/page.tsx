@@ -20,7 +20,6 @@ export default function Home() {
 	return (
 		<div>
 			<main className='bg-[--color-background] text-[--color-foreground] flex flex-col gap-12 pt-20 text-center'>
-				{/* Carousel section */}
 				<section>
 					<Carousel images={images} />
 				</section>

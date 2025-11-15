@@ -1,9 +1,11 @@
-import React from 'react';
+'use client';
+import React, { ReactNode } from 'react';
 import Slider from './ui/Slider';
 import { Image } from './ui/Image';
 
 export const TESTIMONIALS = [
 	{
+		key: 1,
 		name: 'Himanshu Chaturvedi',
 		job: '(Manager @RBS)',
 		src: '/images/testimonials/Himanshu.jpg',
@@ -14,6 +16,7 @@ export const TESTIMONIALS = [
                     mission of changing generations.`,
 	},
 	{
+		key: 2,
 		name: 'Shiva Kumar',
 		job: '(Developer at Sapient)',
 		src: '/images/testimonials/Shiva.jpg',
@@ -30,6 +33,7 @@ export const TESTIMONIALS = [
                                                 I'm glad to be a small, tiny part of her great work.`,
 	},
 	{
+		key: 3,
 		name: 'Neenu Suresh',
 		job: '(PM @Pulse iD)',
 		src: '/images/testimonials/Neenu.jpg',
@@ -44,6 +48,7 @@ export const TESTIMONIALS = [
                                             to the venture and its beneficiaries.`,
 	},
 	{
+		key: 4,
 		name: 'Christeena Victor',
 		job: '(CA)',
 		src: '/images/testimonials/Christeena.jpg',
@@ -63,6 +68,7 @@ export const TESTIMONIALS = [
                                             These sisters have truly inspired me`,
 	},
 	{
+		key: 5,
 		name: 'Pragya Sharma',
 		job: '(Founder of unpurl.com)',
 		src: '/images/testimonials/Pragya.jpg',
@@ -74,6 +80,7 @@ export const TESTIMONIALS = [
                                             Priya shares with her students is quite heartwarming.`,
 	},
 	{
+		key: 6,
 		name: 'Purva Madaan',
 		job: '(Senior Manager at EY)',
 		src: '/images/testimonials/Purva.jpg',
@@ -86,31 +93,41 @@ export const TESTIMONIALS = [
 	},
 ];
 
+interface CardProps {
+	key: number;
+	name?: string;
+	job?: string;
+	review?: string;
+	src?: string;
+}
+
+const getCardComponent = (card: CardProps): ReactNode => {
+	return (
+		<div
+			className='shadow-amber-600 shadow-lg'
+			key={card.name}>
+			<h2 className='text-black'>{card.name}</h2>
+			<h3 className='text-black'>{card.job}</h3>
+			<p className='h-[200px] w-[315px] my-2 overflow-scroll'>{card.review}</p>
+			<div className='relative aspect-square max-h-[150px] mx-auto'>
+				<Image
+					src={card.src}
+					alt={card.name}
+					fill
+					className='w-full rounded-full'
+				/>
+			</div>
+		</div>
+	);
+};
+
 const Testimonials = () => {
 	return (
 		<section>
 			<div className='my-2'>
 				<Slider
 					cards={TESTIMONIALS}
-					CardComponent={(card) => {
-						return (
-							<div
-								className='shadow-amber-600 shadow-lg'
-								key={card.name}>
-								<h2 className='text-black'>{card.name}</h2>
-								<h3 className='text-black'>{card.job}</h3>
-								<p className='h-[300px] overflow-scroll'>{card.review}</p>
-								<div className='relative aspect-square h-[200px]'>
-									<Image
-										src={card.src}
-										alt={card.name}
-										fill
-										className='w-full'
-									/>
-								</div>
-							</div>
-						);
-					}}
+					getCardComponent={getCardComponent}
 				/>
 			</div>
 		</section>

@@ -23,13 +23,20 @@ export default function Carousel({ images }: CarouselProps) {
 			className='w-full max-w-screen mx-auto'>
 			{images.map((src, index) => (
 				<SwiperSlide key={index}>
-					<div className='relative w-full h-[400px] sm:h-[500px] md:h-[600px]'>
+					<div className='relative w-full aspect-[16/9] max-h-[70vh]'>
 						<Image
 							src={src}
 							alt={`Carousel image ${index + 1}`}
 							fill
 							priority={index === 0}
-							className='object-cover shadow-lg'
+							className='object-cover blur-xs scale-110 opacity-50'
+						/>
+						<Image
+							src={src}
+							alt={`Carousel image ${index + 1}`}
+							fill
+							priority={index === 0}
+							className='object-contain shadow-lg'
 						/>
 					</div>
 				</SwiperSlide>

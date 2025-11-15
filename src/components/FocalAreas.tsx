@@ -8,7 +8,7 @@ const FocalAreas = () => {
 					Our Focus Areas
 				</h2>
 				<p className='text-gray-800 text-xl'>
-					We try to solve the below puzzles in a kid's life
+					We try to solve the below puzzles in a kid&apos;s life
 				</p>
 				<div className='grid grid-cols-1 lg:grid-cols-5 my-10'>
 					<div className='bg-yellow-200 p-6 rounded-2xl shadow-md rotate-[-2deg]'>
@@ -25,15 +25,16 @@ const FocalAreas = () => {
 							Financial Hardships Affecting Education
 						</h3>
 						<p>
-							It's hard to keep getting a good education because of money
-							issues. Some families can't afford the things needed for school.
+							It&apos;s hard to keep getting a good education because of money
+							issues. Some families can&apos;t afford the things needed for
+							school.
 						</p>
 					</div>
 					<div className='bg-blue-200 p-6 rounded-2xl shadow-md rotate-[-1deg]'>
 						<h3 className='font-bold text-xl mb-1 lg:mb-4'>Career Confusion</h3>
 						<p>
-							Kids don't always know what kind of job they want when they grow
-							up. They need help figuring it out.
+							Kids don&apos;t always know what kind of job they want when they
+							grow up. They need help figuring it out.
 						</p>
 					</div>
 					<div className='bg-green-200 p-6 rounded-2xl shadow-md rotate-[2deg]'>
@@ -48,7 +49,7 @@ const FocalAreas = () => {
 						<h3 className='font-bold text-xl mb-1 lg:mb-4'> Safe Growth</h3>
 						<p>
 							Because their parents are usually busy trying to make ends meet,
-							kids often don't get the chance to learn at a good place and
+							kids often don&apos;t get the chance to learn at a good place and
 							become better.
 						</p>
 					</div>
