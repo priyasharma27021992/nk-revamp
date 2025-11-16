@@ -104,11 +104,13 @@ interface CardProps {
 const getCardComponent = (card: CardProps): ReactNode => {
 	return (
 		<div
-			className='shadow-amber-600 shadow-lg'
+			className='shadow-amber-600 p-2 border-2 border-primary rounded-2xl'
 			key={card.name}>
-			<h2 className='text-black'>{card.name}</h2>
-			<h3 className='text-black'>{card.job}</h3>
-			<p className='h-[200px] w-[315px] my-2 overflow-scroll'>{card.review}</p>
+			<h2 className='text-black font-bold'>{card.name}</h2>
+			<h3 className='text-black italic'>{card.job}</h3>
+			<p className='h-[220px] w-[350px] my-2 overflow-scroll text-gray-700'>
+				{card.review}
+			</p>
 			<div className='relative aspect-square max-h-[150px] mx-auto'>
 				<Image
 					src={card.src}
@@ -125,6 +127,9 @@ const Testimonials = () => {
 	return (
 		<section>
 			<div className='my-2'>
+				<h2 className='font-bold my-4 text-2xl'>
+					What some of our DONORS Say?
+				</h2>
 				<Slider
 					cards={TESTIMONIALS}
 					getCardComponent={getCardComponent}

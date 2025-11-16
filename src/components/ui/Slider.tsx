@@ -10,7 +10,7 @@ export default function Slider<T>({
 }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const containerRef = useRef<HTMLDivElement | null>(null);
-	const visibleSlides = 6;
+	const visibleSlides = 4;
 	const totalSlides = cards?.length;
 	const extendedImages = [...cards, ...cards.slice(0, visibleSlides)];
 
@@ -41,7 +41,7 @@ export default function Slider<T>({
 	return (
 		<div className='w-full overflow-hidden'>
 			<div
-				className='flex flex-row gap-12'
+				className='flex gap-1'
 				ref={containerRef}
 				style={{
 					transform: `translateX(-${(currentIndex * 100) / visibleSlides}%)`,
@@ -50,7 +50,7 @@ export default function Slider<T>({
 				{extendedImages?.map((card, i) => {
 					return (
 						<div
-							className='max-h-[500px] relative'
+							className='relative'
 							key={i}>
 							{getCardComponent(card)}
 						</div>
