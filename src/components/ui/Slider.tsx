@@ -1,4 +1,5 @@
 'use client';
+import { useScreenSize } from '@/hooks/useScreenSize';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 
 export default function Slider<T>({
@@ -10,7 +11,19 @@ export default function Slider<T>({
 }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const containerRef = useRef<HTMLDivElement | null>(null);
-	const visibleSlides = 4;
+	const [width] = useScreenSize();
+
+	const visibleSlides =
+		width >= 1400
+			? 5
+			: width > 1200
+			? 4
+			: width >= 992
+			? 3
+			: width >= 768
+			? 3
+			: 1;
+
 	const totalSlides = cards?.length;
 	const extendedImages = [...cards, ...cards.slice(0, visibleSlides)];
 
