@@ -44,7 +44,7 @@ function useEvent(target: any, type: any, listener: any, cleanup?: any): void {
 
 		return () => {
 			unsubscribed = true;
-			targetEl.removeListener(type, handler);
+			targetEl?.removeListener(type, handler);
 			storedCleanUp.current?.();
 		};
 	}, [target, type]);
