@@ -6,10 +6,10 @@ export default function Team() {
 			<div className='max-w-6xl mx-auto my-2'>
 				<div className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full'>
 					<div className='flex justify-center items-center flex-col'>
-						<h2 className='italic font-bold text-xl'>
+						<p className='italic font-bold text-lg bg-white/70'>
 							Teacher at Pragati School
-						</h2>
-						<h3>Manju Devi</h3>
+						</p>
+						<p>Manju Devi</p>
 						<div className='relative w-[300px] aspect-square bg-primary flex justify-center items-center rounded-2xl'>
 							<Image
 								src='/images/team/manju.jpg'
@@ -20,10 +20,8 @@ export default function Team() {
 						</div>
 					</div>
 					<div className='flex justify-center items-center flex-col'>
-						<h2 className='italic font-bold text-xl'>
-							Teacher at Unnati School
-						</h2>
-						<h3>Pratima Saini</h3>
+						<p className='italic font-bold text-xl'>Teacher at Unnati School</p>
+						<p>Pratima Saini</p>
 						<div className='relative w-[300px] aspect-square bg-primary rounded-2xl'>
 							<Image
 								src='/images/team/Pratima.jpg'
@@ -34,8 +32,8 @@ export default function Team() {
 						</div>
 					</div>
 					<div className='flex justify-center items-center flex-col'>
-						<h2 className='italic font-bold text-xl'>Growth Advisor</h2>
-						<h3>Prashant Sharma</h3>
+						<p className='italic font-bold text-xl'>Growth Advisor</p>
+						<p>Prashant Sharma</p>
 						<div className='relative w-[300px] aspect-square bg-primary rounded-2xl'>
 							<Image
 								src='/images/team/PrashantMishra.jpg'

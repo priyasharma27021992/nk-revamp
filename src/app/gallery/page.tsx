@@ -24,16 +24,11 @@ const Gallery = () => {
 							);
 						})} */}
 					<div className=''>
-						{Array(20)
-							.fill(0)
-							.map((_, i) => {
-								return (
-									<ImageGallery
-										key={i}
-										img={`/images/gallery/IMG_${i + 1}.jpg`}
-									/>
-								);
-							})}
+						<ImageGallery
+							urls={Array(5)
+								.fill(0)
+								.map((_, i) => `/images/gallery/check/${i + 1}.png`)}
+						/>
 					</div>
 				</div>
 			</section>

@@ -34,14 +34,16 @@ export const Leadership = () => {
 	return (
 		<section className=''>
 			<div className='max-w-6xl mx-auto flex flex-col gap-4'>
-				<h2 className='font-bold text-5xl'>Nanhe Khwab founders</h2>
-				<h3>
-					Nanhe Khwab was founded in 2013 by the Sharma sisters, who, despite
-					their regular professional commitments, have passionately dedicated
-					themselves to improving the lives of underprivileged children. Later,
-					their friend Ameen learned about their mission and wholeheartedly
-					joined them in this inspiring journey.
-				</h3>
+				<div className='flex flex-col gap-2 bg-white/70 p-4 rounded'>
+					<h2 className='font-bold text-5xl'>Nanhe Khwab foundations</h2>
+					<p className='text-2xl'>
+						Nanhe Khwab was founded in 2013 by the Sharma sisters, who, despite
+						their regular professional commitments, have passionately dedicated
+						themselves to improving the lives of underprivileged children.
+						Later, their friend Ameen learned about their mission and
+						wholeheartedly joined them in this inspiring journey.
+					</p>
+				</div>
 				<div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 my-6'>
 					{Founders.map((founder, index) => (
 						<FlipCard

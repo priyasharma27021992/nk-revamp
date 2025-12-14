@@ -20,10 +20,12 @@ export const FlipCard = ({ data }: CardDataProps) => {
 	};
 	return (
 		<div className='perspective-[1000px]'>
-			<h2 className='italic font-bold'>{data.name}</h2>
+			<h2 className='italic font-bold text-lg bg-white/70 rounded-t-2xl'>
+				{data.name}
+			</h2>
 			<Button
 				className={cn(
-					'shadow-sm relative aspect-square h-[300px] cursor-pointer whitespace-normal transform-3d transition-transform duration-700 rounded-2xl ease-in-out',
+					'shadow-sm relative aspect-square h-[300px] cursor-pointer whitespace-normal transform-3d transition-transform duration-700 rounded-b-2xl ease-in-out',
 					flip ? 'rotate-y-180' : ''
 				)}
 				onClick={toggleFlip}>
@@ -35,7 +37,7 @@ export const FlipCard = ({ data }: CardDataProps) => {
 						className='absolute rounded-2xl'
 					/>
 				) : (
-					<div className='absolute inset-0 p-4 text-center rotate-y-180 text-[14px] text-gray-800 bg-white rounded-2xl overflow-auto'>
+					<div className='absolute inset-0 p-4 text-center rotate-y-180 text-[14px] text-gray-800 bg-white rounded-b-2xl overflow-auto'>
 						{data.description}
 					</div>
 				)}
