@@ -2,6 +2,7 @@
 import { Poppins, Inter } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const poppins = Poppins({
 	variable: '--font-heading',
@@ -30,6 +31,7 @@ export default function RootLayout({
 				className={`font-[--font-body] ${poppins.variable} ${inter.variable} antialiased`}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

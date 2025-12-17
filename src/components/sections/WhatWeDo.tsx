@@ -32,15 +32,15 @@ const programs = [
 const WhatWeDo = () => {
 	return (
 		<section className='max-w-6xl mx-auto'>
-			<h2 className='text-4xl font-bold underline'>
+			<h2 className='text-lg md:text-2xl lg:text-4xl font-bold underline'>
 				How Nanhe Khwab tranforms lives?
 			</h2>
 			<div className='flex flex-col md:flex-row items-center gap-6 mt-5'>
 				{programs?.map((program, i) => (
 					<div
 						key={program.title}
-						className='flex items-center gap-6'>
-						<div className='bg-white p-2 rounded-xl shadow-lg border min-w-[250px] min-h-[250px]'>
+						className='flex flex-col md:flex-row items-center gap-6'>
+						<div className='bg-white p-2 rounded-xl shadow-lg border min-w-[250px] min-h-[150px] lg:min-h-[250px]'>
 							<h2 className='text-xl font-semibold text-gray-800 mb-3'>
 								{program.title}
 							</h2>

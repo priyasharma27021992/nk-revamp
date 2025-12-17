@@ -11,7 +11,7 @@ import { TrustedBy } from '@/components/TrustedBy';
 
 export default function Home() {
 	return (
-		<main className='bg-[--color-background] text-[--color-foreground] flex flex-col gap-12 py-20 text-center'>
+		<main className='bg-[--color-background] text-[--color-foreground] flex flex-col gap-12 w-full py-20 text-center overflow-hidden'>
 			<HeroSection />
 
 			<Stats />

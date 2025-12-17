@@ -40,11 +40,11 @@ function useEvent(target: any, type: any, listener: any, cleanup?: any): void {
 		const handler = function (this: any, ...args: any[]) {
 			if (!unsubscribed) storedListener.current.apply(this, args);
 		};
-		targetEl.addEventListener(type, handler);
+		targetEl?.addEventListener(type, handler);
 
 		return () => {
 			unsubscribed = true;
-			targetEl?.removeListener(type, handler);
+			targetEl?.removeEventListener(type, handler);
 			storedCleanUp.current?.();
 		};
 	}, [target, type]);

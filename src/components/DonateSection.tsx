@@ -11,11 +11,13 @@ export default function DonateSection() {
 	}, []);
 
 	return (
-		<section className='py-[--spacing-22] text-center bg-[--color-background] rounded-xl'>
-			<h2 className='text-3xl font-[--font-heading] mb-[--spacing-18] text-[--color-foreground]'>
+		<section className='text-center bg-[--color-background] rounded-xl max-w-6xl mx-auto w-full'>
+			<h2 className='text-md md:text-xl lg:text-3xl font-[--font-heading] text-[--color-foreground]'>
 				Support Our Kids
 			</h2>
-			<form>{/* <div id='razorpay-button-container'></div> */}</form>
+			{/* <form>
+				<div id='razorpay-button-container'></div>
+			</form> */}
 		</section>
 	);
 }
