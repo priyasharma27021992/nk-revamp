@@ -12,7 +12,7 @@ const images = [
 
 const HeroSection = () => {
 	return (
-		<section>
+		<section className='-mx-4'>
 			<Carousel images={images} />
 		</section>
 	);
