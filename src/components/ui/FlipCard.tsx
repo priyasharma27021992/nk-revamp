@@ -34,7 +34,7 @@ export const FlipCard = ({ data }: CardDataProps) => {
 						src={data.src}
 						alt={data.name}
 						fill
-						className='absolute rounded-2xl'
+						className='absolute rounded-b-2xl'
 					/>
 				) : (
 					<div className='absolute inset-0 p-4 text-center rotate-y-180 text-[14px] text-gray-800 bg-white rounded-b-2xl overflow-auto'>

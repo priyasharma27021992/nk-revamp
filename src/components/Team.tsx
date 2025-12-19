@@ -4,42 +4,49 @@ export default function Team() {
 	return (
 		<section>
 			<div className='max-w-6xl mx-auto my-2'>
+				<div className='bg-gray-100/70 w-full font-bold text-md md:text-xl my-8'>
+					Team
+				</div>
 				<div className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full'>
 					<div className='flex justify-center items-center flex-col'>
-						<p className='italic font-bold text-lg bg-white/70'>
-							Teacher at Pragati School
-						</p>
-						<p>Manju Devi</p>
-						<div className='relative w-[300px] aspect-square bg-primary flex justify-center items-center rounded-2xl'>
+						<div className='rounded-2xl'>
+							<p className='italic font-bold text-lg bg-white/70 w-full'>
+								Manju Devi, Teacher
+							</p>
 							<Image
 								src='/images/team/manju.jpg'
 								alt='Manju Teacher'
-								fill
-								className='object-contain rounded-2xl'
+								width={200}
+								height={200}
+								className='object-cover object-center w-[250px] h-[290px]'
 							/>
 						</div>
 					</div>
 					<div className='flex justify-center items-center flex-col'>
-						<p className='italic font-bold text-xl'>Teacher at Unnati School</p>
-						<p>Pratima Saini</p>
-						<div className='relative w-[300px] aspect-square bg-primary rounded-2xl'>
+						<div className='rounded-2xl'>
+							<p className='italic font-bold text-lg bg-white/70 w-full'>
+								Pratima Saini, Teacher
+							</p>
 							<Image
 								src='/images/team/Pratima.jpg'
-								alt='Pratima Teacher'
-								fill
-								className='object-contain rounded-2xl'
+								alt='Manju Teacher'
+								width={200}
+								height={200}
+								className='object-cover object-center w-[250px] h-[290px]'
 							/>
 						</div>
 					</div>
 					<div className='flex justify-center items-center flex-col'>
-						<p className='italic font-bold text-xl'>Growth Advisor</p>
-						<p>Prashant Sharma</p>
-						<div className='relative w-[300px] aspect-square bg-primary rounded-2xl'>
+						<div className='rounded-2xl'>
+							<p className='italic font-bold text-lg bg-white/70 w-full'>
+								Prashant Sharma, Advisor
+							</p>
 							<Image
 								src='/images/team/PrashantMishra.jpg'
-								alt='Advisor at NK'
-								fill
-								className='object-contain rounded-2xl'
+								alt='Manju Teacher'
+								width={200}
+								height={200}
+								className='object-cover object-center w-[250px] h-[290px]'
 							/>
 						</div>
 					</div>

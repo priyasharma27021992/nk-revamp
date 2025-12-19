@@ -1,3 +1,4 @@
+import BookCard from './ui/BookCard';
 import { FlipCard } from './ui/FlipCard';
 
 const Founders = [
@@ -38,7 +39,7 @@ export const Leadership = () => {
 					<h2 className='font-bold text-2xl md:text-4xl lg:text-5xl'>
 						Nanhe Khwab foundations
 					</h2>
-					<p className='text-md md:text-2xl'>
+					<p className='text-md md:text-xl'>
 						Nanhe Khwab was founded in 2013 by the Sharma sisters, who, despite
 						their regular professional commitments, have passionately dedicated
 						themselves to improving the lives of underprivileged children.
@@ -46,7 +47,10 @@ export const Leadership = () => {
 						wholeheartedly joined them in this inspiring journey.
 					</p>
 				</div>
-				<div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 my-6'>
+				<div className='bg-gray-100/70 w-full font-bold text-md md:text-xl'>
+					Founders
+				</div>
+				<div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5'>
 					{Founders.map((founder, index) => (
 						<FlipCard
 							data={founder}
@@ -54,6 +58,7 @@ export const Leadership = () => {
 						/>
 					))}
 				</div>
+				{/* <BookCard /> */}
 			</div>
 		</section>
 	);
