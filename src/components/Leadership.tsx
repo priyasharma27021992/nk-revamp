@@ -58,7 +58,7 @@ export const Leadership = () => {
 						/>
 					))}
 				</div>
-				{/* <BookCard /> */}
+				<BookCard />
 			</div>
 		</section>
 	);
