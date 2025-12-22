@@ -50,15 +50,15 @@ export const Leadership = () => {
 				<div className='bg-gray-100/70 w-full font-bold text-md md:text-xl'>
 					Founders
 				</div>
-				<div className='flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5'>
-					{Founders.map((founder, index) => (
-						<FlipCard
-							data={founder}
-							key={index}
+				<div className='flex flex-col md:flex-row my-1 md:my-4'>
+					{Founders.map((founder) => (
+						<BookCard
+							key={founder.name}
+							image={{ src: founder.src, alt: founder.name }}
+							text={founder.description}
 						/>
 					))}
 				</div>
-				<BookCard />
 			</div>
 		</section>
 	);
