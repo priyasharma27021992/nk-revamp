@@ -53,7 +53,7 @@ function useEvent(target: any, type: any, listener: any, cleanup?: any): void {
 export const useScreenSize = (): readonly [number, number] => {
 	const [size, setSize] = useState(() => getSize());
 
-	useEvent(window, 'resize', () => {
+	useEvent(win, 'resize', () => {
 		setSize(getSize());
 	});
 
