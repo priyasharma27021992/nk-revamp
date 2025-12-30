@@ -30,8 +30,6 @@ export default function Home() {
 				<Team />
 			</div>
 
-			<EmbedSocialWidget />
-
 			<Testimonials />
 
 			<TrustedBy />
