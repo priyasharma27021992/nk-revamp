@@ -2,11 +2,9 @@ import EmbedSocialWidget from '@/components/EmbedSocialWidget';
 
 const Gallery = () => {
 	return (
-		<main>
-			<section>
-				<EmbedSocialWidget />
-			</section>
-		</main>
+		<section>
+			<EmbedSocialWidget />
+		</section>
 	);
 };
 

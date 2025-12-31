@@ -28,9 +28,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`font-[--font-body] ${poppins.variable} ${inter.variable} antialiased`}>
+				className={`min-h-screen flex flex-col font-[--font-body] ${poppins.variable} ${inter.variable} antialiased`}>
 				<Navbar />
-				{children}
+				<main className='flex-1'>{children}</main>
 				<Footer />
 			</body>
 		</html>
