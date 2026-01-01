@@ -23,7 +23,7 @@ export default function DonateSection() {
 			<h2 className='text-md md:text-xl lg:text-3xl font-[--font-heading] text-[--color-foreground]'>
 				Would you like to donate?
 			</h2>
-			<ol>
+			<ol className='flex gap-2 justify-around'>
 				<li>
 					<div>
 						<p>Pay by Razor Pay</p>
@@ -33,8 +33,14 @@ export default function DonateSection() {
 				<li>
 					<p>Pay by Nanhe Khwab's QR Code</p>
 				</li>
-				<li>
+				<li className='flex flex-col'>
 					<p>Pay directly to our NGO Account</p>
+					<p>
+						Nanhe Khwab's Bank Details(Best for us, no platform fee charges)
+					</p>
+					<p>Name: Nanhe Khwab let them dream charitable trust Account</p>
+					<p>Number:661405601851</p>
+					<p> IFSC code: ICIC0006614</p>
 				</li>
 			</ol>
 		</section>
