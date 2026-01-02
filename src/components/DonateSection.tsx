@@ -21,20 +21,20 @@ export default function DonateSection() {
 	return (
 		<section className='text-center bg-[--color-background] rounded-xl max-w-6xl mx-auto w-full'>
 			<h2 className='text-md md:text-xl lg:text-3xl font-[--font-heading] text-[--color-foreground]'>
-				Would you like to donate?
+				Help us make some tiny little dreams true
 			</h2>
-			<ol className='flex gap-2 justify-around'>
+			<ol className='flex gap-2 justify-around mt-5'>
 				<li>
 					<div>
-						<p>Pay by Razor Pay</p>
+						<p className='text-xl font-bold'>Pay by Razor Pay</p>
 						<form ref={formRef}></form>
 					</div>
 				</li>
 				<li>
-					<p>Pay by Nanhe Khwab's QR Code</p>
+					<p className='text-xl font-bold'>Pay by Nanhe Khwab's QR Code</p>
 				</li>
 				<li className='flex flex-col'>
-					<p>Pay directly to our NGO Account</p>
+					<p className='text-xl font-bold'>Pay directly to our NGO Account</p>
 					<p>
 						Nanhe Khwab's Bank Details(Best for us, no platform fee charges)
 					</p>
