@@ -23,7 +23,7 @@ export default function DonateSection() {
 			<h2 className='text-md md:text-xl lg:text-3xl font-[--font-heading] text-[--color-foreground]'>
 				Help us make some tiny little dreams true
 			</h2>
-			<ol className='flex gap-2 justify-around mt-5'>
+			<ol className='flex flex-col md:flex-row gap-2 justify-around mt-5'>
 				<li>
 					<div>
 						<p className='text-xl font-bold'>Pay by Razor Pay</p>
