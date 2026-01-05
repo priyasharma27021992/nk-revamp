@@ -25,13 +25,16 @@ export default function DonateSection() {
 			</h2>
 			<ol className='flex flex-col md:flex-row gap-2 justify-around mt-5'>
 				<li>
-					<div>
-						<p className='text-xl font-bold'>Pay by Razor Pay</p>
-						<form ref={formRef}></form>
-					</div>
+					<p className='text-xl font-bold'>Pay by Razor Pay</p>
+					<form ref={formRef}></form>
 				</li>
-				<li>
+				<li className='flex flex-col justify-center items-center'>
 					<p className='text-xl font-bold'>Pay by Nanhe Khwab's QR Code</p>
+					<img
+						src='/images/qr_code.jpg'
+						alt='QR code'
+						className='w-40'
+					/>
 				</li>
 				<li className='flex flex-col'>
 					<p className='text-xl font-bold'>Pay directly to our NGO Account</p>
