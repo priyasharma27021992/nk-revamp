@@ -23,9 +23,9 @@ export default function DonateSection() {
 			<h2 className='text-md md:text-xl lg:text-3xl font-[--font-heading] text-[--color-foreground]'>
 				Help us make some tiny little dreams true
 			</h2>
-			<ol className='flex flex-col md:flex-row gap-2 justify-around mt-5'>
+			<ol className='grid grid-cols-3 mt-5'>
 				<li>
-					<p className='text-xl font-bold'>Pay by Razor Pay</p>
+					<p className='text-xl font-bold pb-4'>Pay by Razor Pay</p>
 					<form ref={formRef}></form>
 				</li>
 				<li className='flex flex-col justify-center items-center'>
@@ -37,13 +37,20 @@ export default function DonateSection() {
 					/>
 				</li>
 				<li className='flex flex-col'>
-					<p className='text-xl font-bold'>Pay directly to our NGO Account</p>
-					<p>
-						Nanhe Khwab's Bank Details(Best for us, no platform fee charges)
+					<p className='text-xl font-bold pb-4'>
+						Pay directly to our NGO Account
 					</p>
-					<p>Name: Nanhe Khwab let them dream charitable trust Account</p>
-					<p>Number:661405601851</p>
-					<p> IFSC code: ICIC0006614</p>
+					<em className='py-2'>Best for us, no platform fee charges</em>
+					<p>
+						<strong>Name:</strong> Nanhe Khwab let them dream charitable trust
+						Account
+					</p>
+					<p>
+						<strong>Number:</strong> 661405601851
+					</p>
+					<p>
+						<strong>IFSC code:</strong> ICIC0006614
+					</p>
 				</li>
 			</ol>
 		</section>
