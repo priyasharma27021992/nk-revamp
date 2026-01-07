@@ -36,9 +36,9 @@ export const Leadership = () => {
 		<section className=''>
 			<div className='max-w-6xl mx-auto flex flex-col gap-4'>
 				<div className='flex flex-col gap-2 bg-white/70 p-4 rounded'>
-					<h2 className='font-bold text-2xl md:text-4xl lg:text-5xl'>
+					<p className='text-lg md:text-2xl lg:text-4xl font-bold underline my-2'>
 						Nanhe Khwab foundations
-					</h2>
+					</p>
 					<p className='text-md md:text-xl'>
 						Nanhe Khwab was founded in 2013 by the Sharma sisters, who, despite
 						their regular professional commitments, have passionately dedicated

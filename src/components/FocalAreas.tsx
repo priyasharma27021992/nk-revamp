@@ -4,9 +4,9 @@ const FocalAreas = () => {
 	return (
 		<section className='bg-gray-50 py-10'>
 			<div className='max-w-6xl mx-auto'>
-				<h2 className='text-3xl font-bold text-gray-800 mb-4'>
+				<p className='text-lg md:text-2xl lg:text-4xl font-bold underline my-2'>
 					Our Focus Areas
-				</h2>
+				</p>
 				<p className='text-gray-800 text-xl'>
 					We try to solve the below puzzles in a kid&apos;s life
 				</p>

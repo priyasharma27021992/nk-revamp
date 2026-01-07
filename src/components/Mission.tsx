@@ -9,9 +9,9 @@ export default function Mission() {
 			)}>
 			{/* Mission */}
 			<div className='max-w-4xl mx-auto'>
-				<h2 className='text-3xl font-[--font-heading] mb-6 text-[--color-foreground]'>
+				<p className='text-lg md:text-2xl lg:text-4xl font-bold underline my-2'>
 					Our Guiding Mission
-				</h2>
+				</p>
 				<p className='text-lg font-[--font-body] text-[--color-foreground]/80 leading-relaxed'>
 					Every child deserves the chance to dream, learn, and grow. We truly
 					believe that while many NGOs are doing impact-making work, such as

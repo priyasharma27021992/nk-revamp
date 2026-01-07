@@ -127,9 +127,9 @@ const Testimonials = () => {
 	return (
 		<section>
 			<div className='my-2'>
-				<h2 className='font-bold my-4 text-2xl'>
+				<p className='text-lg md:text-2xl lg:text-4xl font-bold underline my-2'>
 					What some of our DONORS Say?
-				</h2>
+				</p>
 				<Slider
 					cards={TESTIMONIALS}
 					getCardComponent={getCardComponent}
