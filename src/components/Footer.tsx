@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Footer = () => {
 	return (
 		<footer>
-			<section className='w-full bg-amber-600/80 border-t border-t-red-100 flex flex-col justify-center items-center gap-2 py-2'>
+			<section className='w-full bg-[var(--color-brand-orange)] border-t border-t-red-100 flex flex-col justify-center items-center gap-2 p-2'>
 				<div className='flex flex-row justify-around gap-1 items-center px-4 py-2 text-sm lg:text-lg'>
 					<div className='flex flex-col flex-1 text-sm gap-2'>
 						<p className='font-extralight text-unwrap overflow-hidden'>
@@ -22,7 +22,9 @@ const Footer = () => {
 					</div>
 					<div className='flex gap-1 lg:gap-2 justify-end items-center flex-1'>
 						<div className='flex gap-1 lg:gap-3'>
-							<Link href='https://www.instagram.com/nanhe_khwab/'>
+							<Link
+								href='https://www.instagram.com/nanhe_khwab/'
+								className='hover:scale-110'>
 								<Image
 									src={LinkedInSVG}
 									className=''
@@ -30,7 +32,9 @@ const Footer = () => {
 									width={20}
 								/>
 							</Link>
-							<Link href='https://www.instagram.com/nanhe_khwab/'>
+							<Link
+								href='https://www.instagram.com/nanhe_khwab/'
+								className='hover:scale-110'>
 								<Image
 									src={InstagramSVG}
 									className=''
@@ -41,10 +45,10 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div>
+				<p className='text-center'>
 					NANHE KHWAB LET THEM DREAM • ALL RIGHTS RESERVED • CONCEPTUALISED &
 					DESIGNED BY PRIYA SHARMA
-				</div>
+				</p>
 			</section>
 		</footer>
 	);

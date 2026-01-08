@@ -16,7 +16,7 @@ const BookCard = ({ image, text }: BookCardProps) => {
 	return (
 		<>
 			{/* Desktop */}
-			<div className='hidden w-[700px] h-[350px]  md:flex justify-center perspective-[1200px] mx-8 my-4'>
+			<div className='hidden w-[700px] h-[350px] lg:flex justify-center perspective-[1200px] mx-8 my-4'>
 				<div className='w-1/2 origin-right backface-hidden [transform:rotateY(10deg)_translateZ(90px)]'>
 					<Image
 						src={image.src}
@@ -30,8 +30,8 @@ const BookCard = ({ image, text }: BookCardProps) => {
 				</div>
 			</div>
 			{/* mobile */}
-			<div className='flex md:hidden flex-col items-center [perspective:1200px] mx-2 my-1'>
-				<div className='-rotate-x-38 aspect-auto origin_bottom backface-hidden border-2 border-amber-100'>
+			<div className='flex lg:hidden flex-col items-center [perspective:1200px] mx-2 my-1'>
+				<div className='-rotate-x-25 aspect-auto origin_bottom backface-hidden [transform:rotateX(-10deg)_translateZ(90px)]'>
 					<Image
 						src={image.src}
 						width={200}
@@ -39,7 +39,7 @@ const BookCard = ({ image, text }: BookCardProps) => {
 						className='h-full object-cover'
 					/>
 				</div>
-				<div className='rotate-x-38 origin_top bg-gray-100 backface-hidden border-2 border-amber-100'>
+				<div className='rotate-x-25 origin_top bg-gray-100 backface-hidden'>
 					<p className='text-sm overflow-scroll'>{text}</p>
 				</div>
 			</div>

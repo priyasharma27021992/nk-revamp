@@ -64,10 +64,9 @@ export function Navbar() {
 							<Link
 								href={link.href}
 								className={cn(
-									'hover:text-primary transition-colors font-bold px-2 py-1 rounded-sm text-sm lg:text-xl',
+									'hover:text-primary transition-colors font-bold px-2 py-1 rounded-sm text-sm md:text-lg lg:text-xl',
 									pathname === link.href && 'active',
-									'[&.active]:bg-[var(--color-brand-orange)]',
-									isTransparent && 'text-white'
+									'[&.active]:bg-[var(--color-brand-orange)]'
 								)}>
 								{link.name}
 							</Link>
