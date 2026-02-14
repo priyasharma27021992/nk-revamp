@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FocalAreas = () => {
 	return (
 		<section className='bg-gray-50 py-10'>

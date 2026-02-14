@@ -1,5 +1,4 @@
 import DonateSection from '@/components/DonateSection';
-import EmbedSocialWidget from '@/components/EmbedSocialWidget';
 import FocalAreas from '@/components/FocalAreas';
 import HeroSection from '@/components/HeroSection/HeroSection';
 import { Leadership } from '@/components/Leadership';
