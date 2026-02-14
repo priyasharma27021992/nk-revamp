@@ -1,37 +1,33 @@
-import DonateSection from '@/components/DonateSection';
-import FocalAreas from '@/components/FocalAreas';
-import HeroSection from '@/components/HeroSection/HeroSection';
-import { Leadership } from '@/components/Leadership';
-import Mission from '@/components/Mission';
-import WhatWeDo from '@/components/sections/WhatWeDo';
-import Stats from '@/components/Stats';
-import Team from '@/components/Team';
-import Testimonials from '@/components/Testimonials';
-import { TrustedBy } from '@/components/TrustedBy';
+import DonateSection from '@/components/sections/DonateSection';
+import FocalAreasSection from '@/components/sections/FocalAreasSection';
+import HeroSection from '@/components/sections/HeroSection/HeroSection';
+import MissionSection from '@/components/sections/MissionSection';
+import WhatWeDoSection from '@/components/sections/WhatWeDoSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import TrustedBySection from '@/components/sections/TrustedBySection';
+import StatsSection from '@/components/sections/StatsSection';
+import { TeamsSection } from '@/components/sections/TeamsSection';
 
 export default function Home() {
 	return (
 		<section className='bg-[--color-background] text-[--color-foreground] flex flex-col gap-12 w-full py-20 text-center px-4'>
 			<HeroSection />
 
-			<Stats />
+			<StatsSection />
 
-			<Mission />
+			<MissionSection />
 
-			<FocalAreas />
+			<FocalAreasSection />
 
-			<WhatWeDo />
+			<WhatWeDoSection />
+
+			<TeamsSection />
 
 			<DonateSection />
 
-			<div className='bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.2),rgba(255,255,255,0.9)),url(/images/carousel/5.jpg)] bg-cover bg-center bg-no-repeat'>
-				<Leadership />
-				<Team />
-			</div>
+			<TestimonialsSection />
 
-			<Testimonials />
-
-			<TrustedBy />
+			<TrustedBySection />
 		</section>
 	);
 }

@@ -1,6 +1,6 @@
-import { Image } from './ui/Image';
+import { Image } from '../../ui/Image';
 
-export default function Team() {
+const OtherMembers = () => {
 	return (
 		<section>
 			<div className='max-w-6xl mx-auto my-2'>
@@ -54,4 +54,6 @@ export default function Team() {
 			</div>
 		</section>
 	);
-}
+};
+
+export default OtherMembers;

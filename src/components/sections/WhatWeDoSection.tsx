@@ -29,7 +29,7 @@ const programs = [
 	},
 ];
 
-const WhatWeDo = () => {
+const WhatWeDoSection = () => {
 	return (
 		<section className='max-w-6xl mx-auto'>
 			<h2 className='text-lg md:text-2xl lg:text-4xl font-bold underline'>
@@ -67,4 +67,4 @@ const WhatWeDo = () => {
 	);
 };
 
-export default WhatWeDo;
+export default WhatWeDoSection;

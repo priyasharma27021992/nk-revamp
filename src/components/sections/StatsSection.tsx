@@ -1,4 +1,4 @@
-const Stats = () => {
+const StatsSection = () => {
 	return (
 		<section className='w-full'>
 			<p className='text-lg md:text-2xl lg:text-4xl font-bold underline'>
@@ -37,4 +37,4 @@ const Stats = () => {
 	);
 };
 
-export default Stats;
+export default StatsSection;

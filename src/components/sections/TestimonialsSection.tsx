@@ -1,7 +1,7 @@
 'use client';
 import React, { ReactNode } from 'react';
-import Slider from './ui/Slider';
-import { Image } from './ui/Image';
+import Slider from '../ui/Slider';
+import { Image } from '../ui/Image';
 
 export const TESTIMONIALS = [
 	{
@@ -123,7 +123,7 @@ const getCardComponent = (card: CardProps): ReactNode => {
 	);
 };
 
-const Testimonials = () => {
+const TestimonialsSection = () => {
 	return (
 		<section>
 			<div className='my-2'>
@@ -139,4 +139,4 @@ const Testimonials = () => {
 	);
 };
 
-export default Testimonials;
+export default TestimonialsSection;

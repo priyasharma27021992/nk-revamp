@@ -1,4 +1,4 @@
-import { Image } from './ui/Image';
+import { Image } from '../ui/Image';
 
 const companies = [
 	{ name: 'Publicis Sapient', src: '/images/trusted-by/sapient.png' },
@@ -6,7 +6,7 @@ const companies = [
 	{ name: 'Xebia', src: '/images/trusted-by/xebia.png' },
 ];
 
-const TrustedBy = () => {
+const TrustedBySection = () => {
 	return (
 		<section>
 			<p className='text-lg md:text-2xl lg:text-4xl font-bold underline my-2'>
@@ -34,4 +34,4 @@ const TrustedBy = () => {
 	);
 };
 
-export { TrustedBy };
+export default TrustedBySection;

@@ -1,4 +1,4 @@
-const FocalAreas = () => {
+const FocalAreasSection = () => {
 	return (
 		<section className='bg-gray-50 py-10'>
 			<div className='max-w-6xl mx-auto'>
@@ -57,4 +57,4 @@ const FocalAreas = () => {
 	);
 };
 
-export default FocalAreas;
+export default FocalAreasSection;

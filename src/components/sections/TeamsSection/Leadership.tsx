@@ -1,5 +1,4 @@
-import BookCard from './ui/BookCard';
-import { FlipCard } from './ui/FlipCard';
+import BookCard from '../../ui/BookCard';
 
 const Founders = [
 	{
@@ -31,7 +30,7 @@ const Founders = [
 	},
 ];
 
-export const Leadership = () => {
+const Leadership = () => {
 	return (
 		<section className=''>
 			<div className='max-w-6xl mx-auto flex flex-col gap-4'>
@@ -63,3 +62,5 @@ export const Leadership = () => {
 		</section>
 	);
 };
+
+export default Leadership;
