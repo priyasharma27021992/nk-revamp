@@ -40,8 +40,8 @@ export function Navbar() {
 	return (
 		<header
 			className={cn(
-				'fixed top-0 left-0 w-full z-50 bg-background border-b border-border h-20',
-				isTransparent && 'bg-background/20 backdrop-blur-xs'
+				'fixed top-0 left-0 w-full z-50 bg-background border-2 h-20 tracking-tighter',
+				isTransparent && 'bg-background/20 backdrop-blur-xs',
 			)}>
 			<nav className='max-w-7xl mx-auto flex items-center justify-between px-6 py-4 h-full'>
 				{/* LOGO */}
@@ -64,9 +64,9 @@ export function Navbar() {
 							<Link
 								href={link.href}
 								className={cn(
-									'hover:text-primary transition-colors font-bold px-2 py-1 rounded-sm text-sm md:text-lg lg:text-xl',
+									'hover:bg-[var(--color-brand-orange))] transition-colors font-bold px-2 py-1 rounded-sm text-sm md:text-lg',
 									pathname === link.href && 'active',
-									'[&.active]:bg-[var(--color-brand-orange)]'
+									'[&.active]:decoration-[var(--color-brand-orange)] [&.active]:underline [&.active]:decoration-4 [&.active]:underline-offset-4',
 								)}>
 								{link.name}
 							</Link>
@@ -75,7 +75,7 @@ export function Navbar() {
 					<li>
 						<Link
 							href='/donate'
-							className='bg-primary text-primary-foreground px-5 py-2 rounded-full shadow-md hover:opacity-90 transition'>
+							className='bg-[var(--color-brand-orange)] text-primary-foreground px-5 py-2 rounded-full shadow-md hover:opacity-90 transition'>
 							Donate
 						</Link>
 					</li>
